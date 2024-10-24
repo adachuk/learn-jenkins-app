@@ -9,11 +9,12 @@ pipeline {
                     reuseNode true
                 }
             }
+
+        }
         stage('Test') {
-            steps {
+            steps{
                 echo 'Test stage'
             }
-
         }
             steps {
                 sh '''
