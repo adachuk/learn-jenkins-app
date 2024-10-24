@@ -22,6 +22,8 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh '''
+                ls -la
                 echo 'Test stage'
             }
         }
